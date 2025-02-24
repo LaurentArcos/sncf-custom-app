@@ -1,0 +1,14 @@
+<div *ngIf="resultats">
+  <h2>Horaires du trajet</h2>
+  <!-- Affichez les informations reçues -->
+  <pre>{{ resultats | json }}</pre>
+</div>
+
+<!-- Section pour alertes trafic pour une ligne fixe (exemple) -->
+<div>
+  <h2>Alertes trafic</h2>
+  <button (click)="fetchAlertes()">Vérifier les alertes</button>
+  <div *ngIf="alertes">
+    <pre>{{ alertes | json }}</pre>
+  </div>
+</div>

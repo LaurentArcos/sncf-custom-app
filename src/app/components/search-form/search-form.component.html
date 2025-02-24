@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()" #searchForm="ngForm">
+  <div>
+    <label>Départ :</label>
+    <input type="text" name="depart" [(ngModel)]="depart" required>
+  </div>
+  <div>
+    <label>Arrivée :</label>
+    <input type="text" name="arrivee" [(ngModel)]="arrivee" required>
+  </div>
+  <div>
+    <label>Date :</label>
+    <input type="date" name="date" [(ngModel)]="date" required>
+  </div>
+  <div>
+    <label>Heure :</label>
+    <input type="time" name="heure" [(ngModel)]="heure" required>
+  </div>
+  <button type="submit">Valider</button>
+</form>
